@@ -1,0 +1,41 @@
+*{
+    font-family: cursive;
+}
+
+#flor{
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(4, auto);
+    grid-template-areas: "header header"
+                         "img  cont"
+                         "img  cont"
+                         "foot foot";
+}
+
+#header{
+    background-color: rgba(16, 105, 20, 0.76) ;
+    grid-area: header;
+    text-align: center;
+}
+
+#img{
+    background-color: rgb(202, 202, 202) ;
+    grid-area: img;
+    text-align: center;
+    
+}
+
+#cont{
+    background-color: rgba(192, 12, 12, 0.781);
+    grid-area: cont;
+    justify-content: center;
+    margin-top: 120px;
+    margin-bottom: 170px;
+}
+
+#foot{
+    background-color: rgba(16, 105, 20, 0.76) ;
+    grid-area: foot;
+    text-align: center;
+}
